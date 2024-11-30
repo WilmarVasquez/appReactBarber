@@ -1,41 +1,49 @@
-import React from "react";
-import Card from "./components/Card";
-import "./styles/Card.css";
+import React, { useState } from "react";
+import Modal from "./components/Modal";
+import "./styles/Modal.css";
 
 const App = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleSubmit = () => {
+    alert("Acción confirmada");
+    setIsModalOpen(false);
+  };
+
   return (
-    <div
-      style={{
-        display: "flex",
-        gap: "2rem",
-        justifyContent: "center",
-        padding: "2rem",
-      }}
-    >
-      <Card
-        title="Servicios"
-        content="10 servicios disponibles"
-        icon="💇‍♂️"
-        footer="Última actualización: Hoy"
-        backgroundColor="#FF982C" /* Naranja */
-        textColor="#fff"
-      />
-      <Card
-        title="Barberos"
-        content="3 barberos activos"
-        icon="✂️"
-        footer="Ver detalles"
-        backgroundColor="#B49F73" /* Dorado claro */
-        textColor="#000"
-      />
-      <Card
-        title="Turnos Agendados"
-        content="5 turnos hoy"
-        icon="📅"
-        footer="Actualizar métricas"
-        backgroundColor="#493530" /* Marrón oscuro */
-        textColor="#fff"
-      />
+    <div style={{ textAlign: "center", padding: "2rem", color: "#fff" }}>
+      <h1>Componente Modal</h1>
+      <button
+        style={{
+          padding: "0.8rem 1.2rem",
+          backgroundColor: "#FF982C",
+          color: "#fff",
+          border: "none",
+          borderRadius: "8px",
+          cursor: "pointer",
+          fontSize: "1rem",
+        }}
+        onClick={handleOpenModal}
+      >
+        Abrir Modal
+      </button>
+
+      {isModalOpen && (
+        <Modal
+          title="Confirmar Acción"
+          content="¿Está seguro de que desea continuar?"
+          onClose={handleCloseModal}
+          onSubmit={handleSubmit}
+        />
+      )}
     </div>
   );
 };
