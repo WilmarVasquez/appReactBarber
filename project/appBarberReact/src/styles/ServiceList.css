@@ -1,0 +1,77 @@
+.service-list {
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.service-list h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #222831; /* Fondo oscuro */
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.service-table th,
+.service-table td {
+  padding: 1rem;
+  border: 1px solid #b49f73; /* Dorado claro */
+  text-align: center;
+}
+
+.service-table th {
+  background-color: #493530; /* Marrón oscuro */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.service-table tr:nth-child(even) {
+  background-color: #2c2f33; /* Gris oscuro */
+}
+
+.service-table tr:nth-child(odd) {
+  background-color: #3a506b; /* Azul oscuro */
+}
+
+.service-table tr:hover {
+  background-color: #ff982c; /* Naranja */
+}
+
+.edit-button,
+.delete-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button {
+  background-color: #28a745; /* Verde */
+  color: #fff;
+}
+
+.edit-button:hover {
+  background-color: #218838; /* Verde más oscuro */
+}
+
+.delete-button {
+  background-color: #dc3545; /* Rojo */
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Rojo más oscuro */
+}

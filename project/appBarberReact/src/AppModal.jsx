@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "./components/Modal";
 import "./styles/Modal.css";
 
-const App = () => {
+const AppModal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => {
@@ -48,4 +48,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default AppModal;
