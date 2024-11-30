@@ -1,0 +1,22 @@
+{
+  "name": "appbarberiareact",
+  "version": "1.0.0",
+  "description": "'App for BarberShop'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilmarVasquez/appReactBarber.git"
+  },
+  "keywords": [
+    "Wv89090558782"
+  ],
+  "author": "AlberVoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WilmarVasquez/appReactBarber/issues"
+  },
+  "homepage": "https://github.com/WilmarVasquez/appReactBarber#readme"
+}

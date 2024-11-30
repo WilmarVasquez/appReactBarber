@@ -1,0 +1,45 @@
+/* Botón genérico */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: #fff; /* Texto blanco para contraste */
+}
+
+/* Estilo primario (Dorado claro) */
+.btn-primary {
+  background-color: #b49f73; /* Dorado claro */
+}
+
+.btn-primary:hover {
+  background-color: #a38f66; /* Dorado más oscuro al pasar el mouse */
+}
+
+/* Estilo secundario (Marrón oscuro) */
+.btn-secondary {
+  background-color: #493530; /* Marrón oscuro */
+}
+
+.btn-secondary:hover {
+  background-color: #3e2d29; /* Marrón más oscuro al pasar el mouse */
+}
+
+/* Estilo de advertencia (Naranja vibrante) */
+.btn-warning {
+  background-color: #ff982c; /* Naranja vibrante */
+}
+
+.btn-warning:hover {
+  background-color: #e68826; /* Naranja más oscuro al pasar el mouse */
+}
+
+/* Efecto clic */
+.btn:active {
+  transform: scale(0.95);
+}
