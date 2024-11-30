@@ -2,7 +2,7 @@ import React from "react";
 import MetricsBarber from "./components/MetricsBarber";
 import "./styles/MetricsBarber.css";
 
-const App = () => {
+const AppMetricB = () => {
   const metricsData = [
     {
       title: "Turnos Atendidos",
@@ -39,4 +39,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default AppMetricB;
